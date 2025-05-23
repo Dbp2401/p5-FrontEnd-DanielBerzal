@@ -1,0 +1,113 @@
+/* Contenedor principal en fila */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: Arial;
+}
+
+/* Lista de contactos */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  width: 30%;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.contact-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  list-style: none;
+  padding: 5px;
+  width: 200px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  display: block;
+}
+
+.buttonContact {
+  border: 2px solid #ddd;
+  border-radius: 20px;
+}
+
+.message-list {
+  flex: 1;
+  padding: 1rem;
+  padding-bottom: 60px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message {
+  align-self: flex-start;
+  max-width: 60%;
+  padding: 0.5rem;
+  background: #f1f1f1;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+.sendMessage {
+  position: fixed;
+  bottom: 0;
+  left: 33%;
+  right: 0;
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  background: white;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.sendMessage input[type="text"] {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.sendMessage button {
+  background: #25d366;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  margin-left: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.message {
+  max-width: 60%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.sent {
+  align-self: flex-end;
+  background: #dcf8c6;
+}
+
+.received {
+  align-self: flex-start;
+  background: #f1f1f1;
+}
